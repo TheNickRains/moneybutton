@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent-red: #dc2626;
+  --accent-green: #10b981;
+  --accent-yellow: #fbbf24;
 }
 
 @theme inline {
@@ -12,15 +15,129 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Force dark theme regardless of system preference */
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom button glow animation */
+@keyframes buttonGlow {
+  0% {
+    box-shadow: 0 0 10px 0px rgba(220, 38, 38, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(220, 38, 38, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px 0px rgba(220, 38, 38, 0.7);
+  }
+}
+
+/* Button ripple effect animation */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Coin animation */
+@keyframes coinSpin {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateY(180deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+/* Pulse animation for pot growth */
+@keyframes potPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Success checkmark animation */
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.button-glow {
+  animation: buttonGlow 2s infinite;
+}
+
+.coin-spin {
+  animation: coinSpin 0.7s ease-in-out;
+}
+
+.pot-pulse {
+  animation: potPulse 0.6s ease-in-out;
+}
+
+.checkmark {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: checkmark 0.6s ease-in-out forwards;
+}
+
+/* Custom win animation */
+@keyframes winPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px rgba(251, 191, 36, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px 20px rgba(251, 191, 36, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px rgba(251, 191, 36, 0.7);
+  }
+}
+
+/* Green pulse animation for jackpot increases */
+@keyframes greenPulse {
+  0% {
+    box-shadow: 0 0 5px 0px rgba(74, 222, 128, 0.3);
+    border-color: rgba(74, 222, 128, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px 5px rgba(74, 222, 128, 0.7);
+    border-color: rgba(74, 222, 128, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px 0px rgba(74, 222, 128, 0.3);
+    border-color: rgba(74, 222, 128, 0.3);
+  }
+}
+
+.pulse-green {
+  animation: greenPulse 1s ease-in-out;
 }

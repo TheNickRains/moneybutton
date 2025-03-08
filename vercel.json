@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "regions": ["iad1"],
+  "environment": {
+    "NEXT_PUBLIC_WORMHOLE_RPC_URL": "{{NEXT_PUBLIC_WORMHOLE_RPC_URL}}",
+    "NEXT_PUBLIC_CHAINLINK_API_KEY": "{{NEXT_PUBLIC_CHAINLINK_API_KEY}}",
+    "OPENAI_API_KEY": "{{OPENAI_API_KEY}}"
+  }
+} 

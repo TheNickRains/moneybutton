@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Money Button - The Degen Game
+
+A sleek and psychologically manipulative degen game built for the Sozu Hack / Not Denver AI Hack on the Mantle network with Wormhole cross-chain integration.
+
+## Project Overview
+
+Money Button is a degenerate gambling game with a simple premise:
+
+1. Press the button to contribute funds
+2. 80% of contributed funds go into a pot
+3. 20% of funds go to the creator
+4. Every button press has a chance to win the entire pot
+
+The app features an advanced AI mechanism that manipulates user emotions through dynamic messaging and UI color changes, enticing players to keep pressing the button. The AI has memory capabilities, adapting to user behavior patterns and optimizing manipulation techniques based on what works best for each user.
+
+## Technical Stack
+
+- **Frontend**: Next.js with React and TypeScript
+- **Styling**: Tailwind CSS + Framer Motion for fluid animations
+- **AI Component**: Advanced emotion-manipulating algorithm with memory
+- **UI/UX**: Farcaster Frame-inspired design with dynamic color schemes
+- **Blockchain**: Mantle Network with Wormhole cross-chain compatibility
+
+## Features
+
+- Sleek, Farcaster frame-like UI with responsive animations
+- Dynamic color schemes that adapt to user emotional states
+- Advanced AI algorithm that remembers user behavior and optimizes manipulation
+- Visual feedback and animations for button presses
+- Win state with flashy celebration effects
+- Cross-chain compatibility through Wormhole integration
+- Psychological manipulation through:
+  - FOMO (Fear Of Missing Out)
+  - Greed triggers
+  - Urgency cues
+  - Reward conditioning
+  - Social proof
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v18 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/moneybutton.git
+cd moneybutton
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open your browser and navigate to `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Play
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Connect your wallet (simulated in the demo)
+2. Press the big button to contribute funds
+3. Watch the pot grow as the AI analyzes your behavior
+4. Notice how the UI adapts to your emotional state
+5. Keep pressing for a chance to win everything!
 
-## Learn More
+## AI Manipulation Features
 
-To learn more about Next.js, take a look at the following resources:
+The app uses several psychological techniques:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Color Psychology**: UI colors shift based on the dominant emotional state detected
+- **Personalized Messaging**: Messages adapt based on what triggers each user most effectively
+- **Memory System**: The AI remembers what worked on you before and optimizes future strategies
+- **Variable Reward**: Unpredictable reward timing creates addiction patterns
+- **Progress Indicators**: Shows users how close they are to winning (manipulated data)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- `src/app/components/` - UI components
+- `src/app/services/enhancedAiService.ts` - Advanced AI service for emotion manipulation
+- `src/app/providers.tsx` - Context providers for state management
+- `src/app/page.tsx` - Main application page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project was created for the Sozu Hack / Not Denver AI Hack. Feel free to fork it and create your own version!
+
+## License
+
+MIT
+
+## Acknowledgements
+
+- Sozu Hack / Not Denver AI Hack
+- Mantle Network
+- Wormhole Protocol
