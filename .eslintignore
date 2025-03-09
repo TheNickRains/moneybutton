@@ -1,0 +1,8 @@
+node_modules
+.next
+dist
+build
+coverage
+src/app/components/deprecated/**/*
+src/app/services/deprecated/**/*
+src/app/api/deprecated/**/* 

@@ -1,0 +1,47 @@
+{
+  "name": "moneybutton",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:testnet": "NEXT_PUBLIC_WORMHOLE_TESTNET_ENABLED=true next dev",
+    "build": "next build --no-lint --skip-type-check",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^4.3.0",
+    "@langchain/community": "^0.3.34",
+    "@langchain/core": "^0.3.42",
+    "@langchain/openai": "^0.4.4",
+    "@tabler/icons-react": "^3.31.0",
+    "@wormhole-foundation/connect-sdk-evm": "^0.4.6",
+    "@wormhole-foundation/sdk": "^1.13.1",
+    "chroma-js": "^3.1.2",
+    "coinbase-wallet-sdk": "^0.0.1-security",
+    "dotenv": "^16.4.7",
+    "ethers": "^5.7.2",
+    "framer-motion": "^12.4.10",
+    "langchain": "^0.3.19",
+    "next": "15.2.1",
+    "openai": "^4.86.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "viem": "^2.23.7",
+    "wagmi": "^2.14.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.12",
+    "@types/chroma-js": "^3.1.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "postcss": "^8.5.3",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^4.0.12",
+    "typescript": "^5"
+  }
+}
