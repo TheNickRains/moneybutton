@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:testnet": "NEXT_PUBLIC_WORMHOLE_TESTNET_ENABLED=true next dev",
-    "build": "next build --no-lint --skip-type-check",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
